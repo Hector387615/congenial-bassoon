@@ -1,1 +1,1 @@
-# congenial-bassoon
+Este pequeña demostración en el código crea a partir de los argumentos de una persona, el mejor auto disponible. Los tres objetos son: Conductor, Carro y Motor. Al crear el objeto "Conductor", mediante condicionales, se crean los objetos: Carro y Motor más eficaces para el Conductor.
