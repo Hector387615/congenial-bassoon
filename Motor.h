@@ -1,46 +1,57 @@
+/*
+ * Proyecto Simulador_Auto
+ * Héctor Manuel Cervantes Rodríguez
+ * A01571242
+ * 02/12/2021
+ */
+
+/*
+ * Clase Conductor, crea el carro, ya sea Deportivo o Sedan. 
+ */
 #ifndef MOTOR_H
 #define MOTOR_H
 
 class Motor{
+
+
   private:
     int cilindros;
-    float consumo_gasolina_pesos;
-    bool motor_encendido;
+    int valvulas;
 
   public:
-    Motor():cilindros(4), consumo_gasolina_pesos(1600), motor_encendido(false){};
-    Motor(int cilin, float consumo, bool mot): cilindros(cilin), consumo_gasolina_pesos(consumo), motor_encendido(mot){};
+    Motor():cilindros(4), valvulas(16){};
+    Motor(int cilin, int val): cilindros(cilin), valvulas(val){};
 
     int get_cilindros();
-    float get_consumo_gasolina_pesos();
-    bool get_motor_encendido();
-
+    float get_valvulas();
     void set_cilindros(int );
-    void set_consumo_gasolina_pesos(float );
-    void set_motor_encendido(bool);
+    void set_valvulas(int );
+    
 };
 
 int Motor::get_cilindros(){
+
   return cilindros;
+
 }
 
-float Motor::get_consumo_gasolina_pesos(){
-  return consumo_gasolina_pesos;
-}
+float Motor::get_valvulas(){
 
-bool Motor::get_motor_encendido(){
-  return motor_encendido;
+  return valvulas;
+
 }
 
 void Motor::set_cilindros(int cilin){
+
   cilindros = cilin;
+
 }
 
-void Motor::set_consumo_gasolina_pesos(float consumo){
-  consumo_gasolina_pesos = consumo;
+void Motor::set_valvulas(int val){
+
+  valvulas = val;
+  
 }
 
-void Motor::set_motor_encendido(bool mot){
-  motor_encendido = mot;
-}
+
 #endif
