@@ -27,27 +27,22 @@ class Deportivo: public Carro{
       descapotable = false;
 
     }
-
+    // Metodos miembros de la clase
     bool get_modo_convertible();
     float get_velocidad_promedio(); 
     float get_rendimiento_por_litro();
-
     void set_modo_convertible_on();
     void set_modo_convertible_off();
   
 };
 
-float Deportivo::get_rendimiento_por_litro(){
-  
-  return rendimiento;
+//Gettters
 
-}
-
-float Deportivo::get_velocidad_promedio(){
-
-  return velocidad_promedio;
-
-}
+/**
+*getter descapotable
+*
+*Devuelve la variable descapotable.
+*/
 
 bool Deportivo::get_modo_convertible(){
 
@@ -55,12 +50,44 @@ bool Deportivo::get_modo_convertible(){
 
 }
 
+/**
+*getter velocidad_promedio
+*
+*Devuelve la velocidad_promedio.
+*/
+float Deportivo::get_velocidad_promedio(){
+
+  return velocidad_promedio;
+
+}
+
+/**
+*getter rendimiento
+*
+*Devuelve la variable rendimiento.
+*/
+float Deportivo::get_rendimiento_por_litro(){
+  
+  return rendimiento;
+
+}
+
+//Setters
+
+/**
+*Setter descapotable a true
+*Permite cambiar el valor de tipo bool descapotable a true.
+*/
 void Deportivo::set_modo_convertible_on(){
 
   descapotable = true;
 
 }
 
+/**
+*Setter descapotable a false
+*Permite cambiar el valor de tipo bool descapotable a true.
+*/
 void Deportivo::set_modo_convertible_off(){
 
   descapotable = false;

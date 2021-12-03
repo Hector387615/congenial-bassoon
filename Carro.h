@@ -147,7 +147,9 @@ float Carro::get_kilometraje(){
 
 }
 
+//Setters 
 /**
+*Setter puertas
 *Permite cambiar el valor de tipo int puertas.
 */
 void Carro::set_puertas(int puert){
@@ -157,6 +159,7 @@ void Carro::set_puertas(int puert){
 }
 
 /**
+*Setter rendimento
 *Permite cambiar el valor de tipo float rendimiento.
 */
 void Carro::set_rendimiento_por_litro(float rend){
@@ -166,6 +169,7 @@ void Carro::set_rendimiento_por_litro(float rend){
 }
 
 /**
+*Setter motor_descompuesto
 *Permite cambiar el valor de tipo bool motor_descompuesto.
 */
 void Carro::set_motor_descompuesto(bool desc){
@@ -175,6 +179,7 @@ void Carro::set_motor_descompuesto(bool desc){
 }
 
 /**
+*Setter motor_encendido a true
 *Permite cambiar el valor de tipo bool motor_encendido a true.
 */
 void Carro::set_motor_on(){
@@ -184,6 +189,7 @@ void Carro::set_motor_on(){
 }
 
 /**
+*Setter motor_encendido a false
 *Permite cambiar el valor de tipo bool motor_descompuesto a false.
 */
 void Carro::set_motor_off(){
@@ -193,6 +199,7 @@ void Carro::set_motor_off(){
 }
 
 /**
+*Setter velocidad_promedio
 *Permite cambiar el valor de tipo float velocidad_promedio.
 */
 void Carro::set_velocidad_promedio(float vel){
@@ -265,6 +272,7 @@ void Carro::crea_motor() {
 *Despliega el gasto total del viaje a partir de una operación matemática.
 */
 float Carro::resumen_viaje(){
+  
   //Desplegamos la distancia total y rendimento.
   std::cout<< "\nHas recorrido " << distancia << " kilometros." << " Con un rendimiento de: "<< rendimiento << " kilometros por litro.\n"; 
   //Pedimos al usuario costo_litro.

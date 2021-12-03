@@ -13,6 +13,7 @@
 #define CONDUCTOR_H
 #include "Carro.h"
 #include "Motor.h"
+#include "Deportivo.h"
 
 class Conductor{
 
@@ -21,6 +22,7 @@ private:
   //Declara las variables de instancia
   float gasto_por_litro;
 	int miembros_familia;
+  int rend;
   Carro carrito;
 
 public:
@@ -39,7 +41,9 @@ public:
 
 };
 
+//Getters
 /**
+*getter carrito
 *Devuelve el objeto Carro creado.
 */
 
@@ -50,6 +54,7 @@ Carro Conductor::get_carro(){
 }
 
 /**
+*getter gasto_por_litro
 *Devuelve el gasto_por_litro especificado 
 *al crear el objeto Condcutor.
 */
@@ -61,6 +66,7 @@ float Conductor::get_gasto_por_litro(){
 }
 
 /**
+*getter miembros_familia
 *Devuelve miembros_familia, parametro especificado 
 *al crear el objeto Conductor.
 */
@@ -71,7 +77,9 @@ int Conductor::get_miembros_familia(){
 
 }
 
+//Setters
 /**
+*setter gasto_por_litro
 *Permite cambiar el valor de la variable gasto_por_litro; 
 parametro especificado al crear el objeto Conductor.
 */
@@ -83,6 +91,7 @@ void Conductor::set_gasto_por_litro(float gast){
 }
 
 /**
+*setter miembros_familia
 *Permite cambiar el valor de la variable miembros_familia; 
 parametro especificado al crear el objeto Conductor.
 */
