@@ -6,3 +6,9 @@ El programa permite generar una simulación del auto que el programa seleccionó
 
 El menú cuenta con 8 opciones: Dentro de estas opciones puedes 1. prender y apagar el auto, 2. recibir una descrpición del auto, 3. activar el modo ahorro gasolina o convertir el auto en descapotable, 4. revisar el kilometraje del auto, 5. simular una distancia (para poder hacerlo el auto debe estar encendido y no debe requerir servicio), 6. Realizar el servicio al auto, 7. Terminar la simulación y recibir un gasto total a partir de la distancia, el rendimiento y el costo de la gasolina especificado, 8. Recibir los datos del motor.
 
+
+Competencias en las que estoy buscando recibir un 1:
+
+-SICT0401A
+-SEG0702A
+
