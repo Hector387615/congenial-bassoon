@@ -22,7 +22,6 @@ private:
   //Declara las variables de instancia
   float gasto_por_litro;
 	int miembros_familia;
-  int rend;
   Carro carrito;
 
 public:
